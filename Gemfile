@@ -11,20 +11,20 @@ gem 'eventmachine', '~> 1.2', '>= 1.2.7'
 gem 'thin', '~> 2.0'
 gem 'sinatra', '~> 4.1'
 gem 'rack', '~> 3.2'
-gem 'rack-protection', '~> 4.1.1'
+gem 'rack-protection', '~> 4.2.1'
 gem 'em-websocket', '~> 0.5.3' # WebSocket support
 gem 'uglifier', '~> 4.2'
 gem 'mime-types', '~> 3.7'
 gem 'execjs', '~> 2.10'
 gem 'ansi', '~> 1.5'
 gem 'term-ansicolor', :require => 'term/ansicolor'
-gem 'rubyzip', '~> 3.1'
+gem 'rubyzip', '~> 3.2'
 gem 'espeak-ruby', '~> 1.1.0' # Text-to-Voice
 gem 'rake', '~> 13.3'
-gem 'activerecord', '~> 7.2' 
+gem 'activerecord', '~> 8.0' 
 gem 'otr-activerecord', '~> 2.5.0'
 gem 'sqlite3', '~> 2.7'
-gem 'rubocop', '~> 1.80.2', require: false
+gem 'rubocop', '~> 1.81.6', require: false
 
 # Geolocation support
 group :geoip do
@@ -63,7 +63,7 @@ end
 group :test do
     gem 'test-unit-full', '~> 0.0.5'
     gem 'rspec', '~> 3.13'
-    gem 'rdoc', '~> 6.14'
+    gem 'rdoc', '~> 6.15'
     gem 'browserstack-local', '~> 1.4'
 
     gem 'irb', '~> 1.15'
@@ -79,7 +79,7 @@ group :test do
     # Note: selenium-webdriver 3.x is incompatible with Firefox version 48 and prior
     # gem 'selenium' # Requires old version of selenium which is no longer available
     gem 'geckodriver-helper', '~> 0.24.0'
-    gem 'selenium-webdriver', '~> 4.35'
+    gem 'selenium-webdriver', '~> 4.37'
 
     # Note: nokogiri is needed by capybara which may require one of the below commands
     # sudo apt-get install libxslt-dev libxml2-dev
